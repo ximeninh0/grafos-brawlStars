@@ -93,6 +93,7 @@ ax3.plot(ks, c_medio, "o-", markersize=4)
 ax3.set_xscale("log")
 ax3.set_yscale("log")
 ax3.set_xticks([2, 5, 10, 20, 50], labels=["2", "5", "10", "20", "50"])
+ax3.xaxis.set_minor_formatter(plt.NullFormatter())  # esconde os rotulos 3x10^0 etc. que sobrepunham
 ax3.set_title("Clustering médio em função do grau, C(k)")
 ax3.set_xlabel("grau k")
 ax3.set_ylabel("C(k)")
